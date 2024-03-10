@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>innerHTML vs innerText vs textContent</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a>Home</a>
+                <a>About</a>
+                <a>Contact Us</a>
+                <a style="display: none">Pricing</a>
+              </nav>
+        </header>
+        <script>
+            const navElement = document.querySelector('nav');
+
+            /* Reading content with innerHTML */
+            // console.log(navElement.innerHTML);
+
+            /* Reading content with innerText */
+            // console.log(navElement.innerText);
+
+            /* Reading content with textContent */
+            console.log(navElement.textContent);
+        </script>
+    </body>
+</html>
