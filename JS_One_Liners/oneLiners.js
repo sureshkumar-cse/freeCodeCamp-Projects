@@ -72,6 +72,6 @@ const insert = (arr, index, newItem) => [
   ...arr.slice(index),
 ];
 
-const items = [1, 2, 4, 5];
-// Insert the number 3 at index 2:
-insert(items, 2, 3);
+const table = [2, 4, 8];
+// Insert the number 6 at index 2:
+insert(table, 2, 6);
