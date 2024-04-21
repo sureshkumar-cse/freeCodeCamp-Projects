@@ -15,16 +15,17 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "Team Lead - Technical",
       company: "CRM Masters Infotech LLP",
       years: "December 2020 - August 2023",
-      description: "Description of what you did",
+      description:
+        "Modify existing software to correct errors, adapt it to new business scenarios, and optimize it to improve performance. Communicate with clients to understand specific system requirements. Design, build, and maintain websites, using WordPress and scripting languages. Write, design, and edit web page content to meet the client's requirement to maintain the SEO. Back up files from websites to local directories and Bitbucket for instant recovery in case of problems. Evaluate code to ensure it is valid, properly structured, meets industry standards, and is compatible with browsers, devices, or operating systems. Analyze user needs to determine technical requirements. Train subordinates in programming and software development.",
     },
     {
       id: 3,
       title: "Software Engineer (Developer)",
       company: "Gars Infotech Private Limited",
       years: "June 2018 - June 2020",
-      description: "Description of what you did",
+      description:
+        "Develop data models for applications, metadata tables, views, and related database structures. Develop database architectural strategies at the modeling, design, and implementation stages to address business and industry requirements. Provide technical support to junior staff and clients. Collaborate with system architects, software architects, design analysts, and others to understand business and industry requirements. Participate in student recruitment, registration, and placement activities. Participate in campus and community events. Configure servers to meet functional specifications. Develop application-specific softwares.",
     },
-    // Add more entries as needed
   ];
 
   const timeline = document.getElementById("timeline");
