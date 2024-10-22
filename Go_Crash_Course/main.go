@@ -3,5 +3,5 @@ package main
 import "fmt"
 
 func main(){
-	fmt.Print("Hello GoLang world! \n")
+	fmt.Println("Welcome to our Todolist App!")
 }
