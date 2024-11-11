@@ -6,8 +6,10 @@ func main() {
 	var shortGolang = "Watch Go crash course"
 	var fullGolang = "Watch Golang Full Course"
 	rewardDessert := "Reward myself with a donut"
+	var maxItemsInGroup = 20
 
 	fmt.Println("##### Welcome to our Todolist App! #####")
+	fmt.Println("Max items allowed are:", maxItemsInGroup)
 
 	fmt.Println("List of my Todos")
 	fmt.Println(shortGolang)
