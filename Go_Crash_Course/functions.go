@@ -11,9 +11,10 @@ func main() {
     printTasks(taskItems)
     fmt.Println()
 
-    addTasks(taskItems, "Go for a run")
+    taskItems = addTasks(taskItems, "Go for a run")
+    taskItems = addTasks(taskItems, "Practice coding in Go")
 
-    fmt.Println()
+    fmt.Println("Updated list")
     printTasks(taskItems)
 }
 func printTasks(taskItems []string) {
@@ -23,7 +24,7 @@ func printTasks(taskItems []string) {
     }
 }
 
-func addTasks(taskItems []string, newTask string) {
+func addTasks(taskItems []string, newTask string) ([]string) {
     var updatedTaskItems = append(taskItems, newTask)
-    printTasks(updatedTaskItems)   
+    return updatedTaskItems
 }
