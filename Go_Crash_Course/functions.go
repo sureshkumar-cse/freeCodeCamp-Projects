@@ -1,3 +1,6 @@
+// A function can return any number of results.
+// In Go, we have to define the data type of return value as well.
+
 package main
 
 import "fmt"
@@ -24,7 +27,7 @@ func printTasks(taskItems []string) {
     }
 }
 
-func addTasks(taskItems []string, newTask string) ([]string) {
+func addTasks(taskItems []string, newTask string) []string {
     var updatedTaskItems = append(taskItems, newTask)
     return updatedTaskItems
 }
