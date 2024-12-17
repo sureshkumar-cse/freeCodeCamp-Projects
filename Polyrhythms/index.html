@@ -7,10 +7,18 @@
   </head>
   <body>
     <canvas id="myCanvas" style="background-color: black"></canvas>
+    <script src="track.js"></script>
     <script>
       const size = 700;
       myCanvas.height = size;
       myCanvas.width = size;
+
+      const trackCenter = { x: size / 2, y: size / 2 };
+      const trackRadius = 100;
+
+      const ctx = myCanvas.getContext("2d");
+      const track = new Track(trackCenter, trackRadius);
+      track.draw(ctx);
     </script>
   </body>
 </html>
