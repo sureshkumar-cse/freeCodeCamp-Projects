@@ -36,10 +36,10 @@ const greetings = (name) => {
   return `Hello, ${name}!`;
 }
 
-// With a single line function, we can remove the curly brackets and the return keyword as follows:
+// With a single line function, you can remove the curly brackets and the return keyword as follows:
 const greetings = (name) => `Hello, ${name}!`;
 
-// With exactly one parameter, we can also remove the parentheses:
+// With exactly one parameter, you can also remove the parentheses:
 const greetings = name => `Hello, ${name}!`;
 
 // <==============================================================================================================>
