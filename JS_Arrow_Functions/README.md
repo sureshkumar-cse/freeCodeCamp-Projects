@@ -9,7 +9,6 @@ Arrow Functions Are Better for Short Functions
 Arrow Functions Have an Implicit Return Statement
 Arrow Functions Don’t Have this Binding
 When You Should Not Use Arrow Functions?
-Conclusion
 
 Let’s dive in!
 

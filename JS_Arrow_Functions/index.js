@@ -154,7 +154,7 @@ const person = {
 person.showSkills();
 
 // Inside an object, the this keyword refers to the current object
-// only when you declare the method using the standard syntax (methodName() or methodName: function(){ })
+// only when you declare the method using the standard syntax ( methodName() or methodName: function(){ } )
 
 // When you declare an object method using the arrow function, the this keyword refers to the global object,
 // and the skills property is undefined there. Never use the arrow function when declaring a method.
