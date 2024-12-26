@@ -1,3 +1,5 @@
+// What Is the Arrow Function Syntax?
+
 // Regular Function in JS
 function greetings(name) {
   console.log(`Hello, ${name}!`);
@@ -12,6 +14,7 @@ const greetings = (name) => {
 
 greetings("Madhura");
 
+// <==============================================================================================================>
 
 // How to Convert a Regular Function to an Arrow Function Easily
 function greetings(name) {
@@ -39,3 +42,4 @@ const greetings = (name) => `Hello, ${name}!`;
 // With exactly one parameter, we can also remove the parentheses:
 const greetings = name => `Hello, ${name}!`;
 
+// <==============================================================================================================>
