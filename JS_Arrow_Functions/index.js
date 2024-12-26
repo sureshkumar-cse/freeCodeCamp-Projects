@@ -101,3 +101,33 @@ const greetings = name => `Hello, ${name}!`;
     const result = a + b;
     return result;
   };
+
+// 3. Arrow Functions Don’t Have this Binding
+
+  // In a regular function, the this keyword refers to the object from which you call the function.
+  // In an arrow function, the this keyword refers to the object from which you define the function.
+  // With Regular Function:
+  const person = {
+    name: 'Madhura',
+    skills: ['Hindi', 'Marathi', 'English'],
+  
+    showSkills() {
+      this.skills.forEach(function (skill) {
+        console.log(`${this.name} is skilled in ${skill}`);
+      });
+    },
+  };
+  
+  person.showSkills();
+
+  // With Arrow Function:
+  const person = {
+    name: 'Madhura',
+    skills: ['Hindi', 'Marathi', 'English'],
+  
+    showSkills() {
+      this.skills.forEach(skill => console.log(`${this.name} is skilled in ${skill}`));
+    },
+  };
+  
+  person.showSkills();
