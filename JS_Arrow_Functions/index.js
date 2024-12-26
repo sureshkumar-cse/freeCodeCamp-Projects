@@ -57,7 +57,8 @@ const greetings = name => `Hello, ${name}!`;
   // Arrow Function
   const greetings = name => console.log(`Hello, ${name}!`);
 
-  // If the function has no parameter, then only need to pass empty parentheses between the assignment and the arrow syntax as shown below:
+  // If the function has no parameter,
+  // then only need to pass empty parentheses between the assignment and the arrow syntax as shown below:
   const greetings = () => console.log(`Hello, World!`);
 
   // Arrow functions are also great for situations where no need to name the function, such as callbacks:
@@ -94,7 +95,8 @@ const greetings = name => `Hello, ${name}!`;
   const add = (a, b) => a + b;
 
   // The arrow function has an implicit return statement.
-  // When you have a single-line arrow function, the return statement will be added implicitly by JavaScript. This means you shouldn't add the return keyword explicitly.
+  // When you have a single-line arrow function, the return statement will be added implicitly by JavaScript.
+  // This means you shouldn't add the return keyword explicitly.
 
   // When you use arrow functions, only write the return statement explicitly when you have multi-line statements:
   const sum = (a, b) => {
@@ -131,3 +133,6 @@ const greetings = name => `Hello, ${name}!`;
   };
   
   person.showSkills();
+
+  // <==============================================================================================================>
+  
