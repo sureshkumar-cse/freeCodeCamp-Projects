@@ -47,7 +47,7 @@ const greetings = name => `Hello, ${name}!`;
 // Why Arrow Functions Are Recommended Over Regular Functions
 
 
-// Arrow Functions Are Better for Short Functions
+// 1. Arrow Functions Are Better for Short Functions
   
   // Regular Function
   function greetings(name) {
@@ -83,3 +83,21 @@ const greetings = name => `Hello, ${name}!`;
   // As you can see, using the arrow function syntax makes your code much more clean and concise.
 
 
+// 2. Arrow Functions Have an Implicit Return Statement
+
+  // Regular Function
+  function add(a, b) {
+    return a + b;
+  }
+
+  // Arrow Function
+  const add = (a, b) => a + b;
+
+  // The arrow function has an implicit return statement.
+  // When you have a single-line arrow function, the return statement will be added implicitly by JavaScript. This means you shouldn't add the return keyword explicitly.
+
+  // When you use arrow functions, only write the return statement explicitly when you have multi-line statements:
+  const sum = (a, b) => {
+    const result = a + b;
+    return result;
+  };
