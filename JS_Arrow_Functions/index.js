@@ -104,6 +104,7 @@ const greetings = name => `Hello, ${name}!`;
     return result;
   };
 
+
 // 3. Arrow Functions Don’t Have this Binding
 
   // In a regular function, the this keyword refers to the object from which you call the function.
@@ -134,5 +135,26 @@ const greetings = name => `Hello, ${name}!`;
   
   person.showSkills();
 
-  // <==============================================================================================================>
+// <==============================================================================================================>
   
+// When You Should Not Use Arrow Functions?
+
+// Never use the arrow function when declaring a method.
+const person = {
+  name: 'Madhura',
+  skills: ['Hindi', 'Marathi', 'English'],
+
+  showSkills: () => {
+    this.skills.forEach(skill => {
+      console.log(`${this.name} is skilled in ${skill}`);
+    });
+  },
+};
+
+person.showSkills();
+
+// Inside an object, the this keyword refers to the current object
+// only when you declare the method using the standard syntax (methodName() or methodName: function(){ })
+
+// When you declare an object method using the arrow function, the this keyword refers to the global object,
+// and the skills property is undefined there. Never use the arrow function when declaring a method.
