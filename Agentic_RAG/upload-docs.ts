@@ -11,30 +11,30 @@ async function main() {
   const cwd = process.cwd();
   const memoryName = "knowledge-base";
 
-  // Upload agent architecture document
+  // Upload Company Background document
   const agentArchitecture = await readFile(
-    path.join(cwd, "docs", "agent-architectures.txt")
+    path.join(cwd, "docs", "Company-Background.txt")
   );
   const agentResult = await langbase.memories.documents.upload({
     memoryName,
     contentType: "text/plain",
-    documentName: "agent-architectures.txt",
+    documentName: "Company-Background.txt",
     document: agentArchitecture,
-    meta: { category: "Examples", topic: "Agent architecture" },
+    meta: { category: "Intro", topic: "Company Background" },
   });
 
-  console.log(agentResult.ok ? "✓ Agent doc uploaded" : "✗ Agent doc failed");
+  console.log(agentResult.ok ? "✓ Intro doc uploaded" : "✗ Intro doc failed");
 
   // Upload FAQ document
   const langbaseFaq = await readFile(
-    path.join(cwd, "docs", "langbase-faq.txt")
+    path.join(cwd, "docs", "Knowledge-Base.txt")
   );
   const faqResult = await langbase.memories.documents.upload({
     memoryName,
     contentType: "text/plain",
-    documentName: "langbase-faq.txt",
+    documentName: "Knowledge-Base.txt",
     document: langbaseFaq,
-    meta: { category: "Support", topic: "Langbase FAQs" },
+    meta: { category: "Support", topic: "Knowledge Base" },
   });
 
   console.log(faqResult.ok ? "✓ FAQ doc uploaded" : "✗ FAQ doc failed");

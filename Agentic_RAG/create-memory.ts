@@ -8,7 +8,7 @@ const langbase = new Langbase({
 async function main() {
   const memory = await langbase.memories.create({
     name: "knowledge-base",
-    description: "An AI memory for storing company internal docs.",
+    description: "An AI memory for storing company related information.",
     embedding_model: "google:text-embedding-004",
   });
 
