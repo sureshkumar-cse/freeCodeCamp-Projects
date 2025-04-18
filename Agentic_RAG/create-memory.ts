@@ -9,7 +9,7 @@ async function main() {
   const memory = await langbase.memories.create({
     name: "knowledge-base",
     description: "An AI memory for storing company internal docs.",
-    embedding_model: "openai:text-embedding-3-large",
+    embedding_model: "google:text-embedding-004",
   });
 
   console.log("Memory created:", memory);
