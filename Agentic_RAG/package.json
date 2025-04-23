@@ -8,7 +8,7 @@
   "keywords": [],
   "author": "",
   "license": "BSD 3-Clause",
-  "description": "## Overview",
+  "description": "This project is a TypeScript implementation of an Agentic RAG. It demonstrates how to build an AI agent that can retrieve information from a knowledge base and generate answers using a Large Language Model (LLM)",
   "dependencies": {
     "dotenv": "^16.5.0",
     "langbase": "^1.1.55"

@@ -233,13 +233,13 @@ This time, the program will retrieve the chunks and then feed them to the suppor
 You should see a helpful answer to the question, using information from the documents. For example:
 
 ```
-Completion: Agent parallelization is a process that runs multiple LLM tasks simultaneously to enhance speed or accuracy...
-1. **Sectioning**: A task is divided into independent parts that can be processed concurrently.
-2. **Voting**: Multiple LLM calls generate different responses for the same task...
-... In practice, agent parallelization involves orchestrating multiple specialized agents to handle different aspects of a task...
+Completion: Agent parallelization is a technique used to speed up the execution of tasks by distributing them across multiple agents that work concurrently [1]. This approach is particularly useful in environments where tasks can be broken down into smaller, independent units of work, allowing for simultaneous processing and reduced overall completion time [1].
+
+
+ [1] parallel-agents.pdf
 ```
 
-The answer may also include citations like “[1]” referencing the source documents (depending on how the system prompt was structured in `getSystemPrompt`). In our prompt, we instructed the AI to cite sources, so it will list the document names as references at the end of the answer (e.g., “[1] agent-architectures.txt”).
+The answer may also include citations like “[1]” referencing the source documents (depending on how the system prompt was structured in `getSystemPrompt`). In our prompt, we instructed the AI to cite sources, so it will list the document names as references at the end of the answer (e.g., “[1] parallel-agents.pdf”).
 
 **Congratulations – you have now built and run an Agentic RAG system!** 🎉 The agent retrieved relevant context from the knowledge base and used it to generate an informed answer with sources.
 
@@ -261,7 +261,7 @@ The answer may also include citations like “[1]” referencing the source docu
 
 ## Acknowledgments
 
-This project was inspired by the freeCodeCamp article _“How to Build RAG AI Agents with TypeScript”_. Special thanks to freeCodeCamp and Maham Codes for the comprehensive tutorial that formed the foundation of this implementatio. The adaptation to Google’s Gemini API was made to explore using the latest Google LLM for the agentic RAG pipeline.
+This project was inspired by the freeCodeCamp article _“How to Build RAG AI Agents with TypeScript”_. Special thanks to `freeCodeCamp` and `Maham Codes` for the comprehensive tutorial that formed the foundation of this implementatio. The adaptation to Google’s Gemini API was made to explore using the latest Google LLM for the agentic RAG pipeline.
 
 ## License
 
