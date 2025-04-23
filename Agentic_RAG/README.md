@@ -22,7 +22,7 @@ Core technologies and APIs: This project uses the [Langbase SDK](https://langbas
 ## Prerequisites
 
 - **Node.js** (v14 or above recommended) and **npm** (Node Package Manager) installed.
-- A **Langbase** account with an API key. Sign up at [Langbase](https://langbase.com/signup){:target=“\_blank”} and obtain your personal API key (required to use Langbase SDK services for memory and agent management).
+- A **Langbase** account with an API key. Sign up at [Langbase](https://langbase.com/signup) and obtain your personal API key (required to use Langbase SDK services for memory and agent management).
 - A **Google Gemini API key** for the LLM. Sign up for access to Google’s Gemini 2.0 API (via Google AI Studio) and get an API key ([Get a Gemini API key  |  Google AI for Developers](https://ai.google.dev/gemini-api/docs/api-key)). This key will be used to allow Langbase (or your local environment) to call the Gemini LLM. Ensure you have enabled the appropriate Google AI services on your account.
 - Basic knowledge of TypeScript/JavaScript and the command line.
 
@@ -45,10 +45,8 @@ cd freeCodeCamp-Projects/Agentic_RAG
 >
 > ```bash
 > mkdir agentic-rag && cd agentic-rag
-> npm init -y
+> npm init -y && touch index.ts agents.ts create-memory.ts upload-docs.ts create-pipe.ts
 > ```
->
-> _Then create the required TypeScript files (`index.ts`, `agents.ts`, `create-memory.ts`, `upload-docs.ts`, `create-pipe.ts`) in the project directory and proceed with the following steps._
 
 ### 2. Install Dependencies
 
