@@ -2,13 +2,13 @@
 
 ## Overview
 
-This project is a TypeScript implementation of an **Agentic RAG** (Retrieval-Augmented Generation) system. It demonstrates how to build an AI agent that can retrieve information from a knowledge base and generate answers using a Large Language Model (LLM). The project follows a freeCodeCamp tutorial on building RAG AI agents ([How to Build RAG AI Agents with TypeScript | freeCodeCamp](https://www.freecodecamp.org/news/how-to-build-rag-ai-agents-with-typescript/)), but uses **Google’s Gemini 2.0 Flash** LLM API instead of OpenAI. By the end of this guide, you will have an application that:
+This project is a TypeScript implementation of an **Agentic RAG** (Retrieval-Augmented Generation) system. It demonstrates how to build an AI agent that can retrieve information from a knowledge base and generate answers using a Large Language Model (LLM). The project follows a freeCodeCamp tutorial on building RAG AI agents ([How to Build RAG AI Agents with TypeScript By Maham Codes](https://www.freecodecamp.org/news/how-to-build-rag-ai-agents-with-typescript/)), but uses **Google’s Gemini 2.0 Flash** LLM API instead of OpenAI. By the end of this guide, you will have an application that:
 
 - **Creates an AI Memory:** Initializes a vector database of knowledge (semantic memory) and loads documents into it.
 - **Retrieves Context:** Uses semantic search to fetch relevant document chunks for a given query (Retrieval step).
 - **Generates Answers:** Employs an LLM (via a Langbase Pipe Agent) to produce a comprehensive response using the retrieved context (Generation step).
 
-Core technologies and APIs: This project uses the ([Langbase SDK](https://langbase.com/docs/sdk)) for managing AI memory and agents, and the **Google Gemini 2.0 Flash** API for text embeddings and answer generation.
+Core technologies and APIs: This project uses the [Langbase SDK](https://langbase.com/docs/sdk) for managing AI memory and agents, and the **Google Gemini 2.0 Flash** API for text embeddings and answer generation.
 
 ## Features
 
@@ -22,7 +22,7 @@ Core technologies and APIs: This project uses the ([Langbase SDK](https://langba
 ## Prerequisites
 
 - **Node.js** (v14 or above recommended) and **npm** (Node Package Manager) installed.
-- A **Langbase** account with an API key. Sign up at ([Langbase](https://langbase.com/signup)) and obtain your personal API key (required to use Langbase SDK services for memory and agent management).
+- A **Langbase** account with an API key. Sign up at [Langbase](https://langbase.com/signup){:target=“\_blank”} and obtain your personal API key (required to use Langbase SDK services for memory and agent management).
 - A **Google Gemini API key** for the LLM. Sign up for access to Google’s Gemini 2.0 API (via Google AI Studio) and get an API key ([Get a Gemini API key  |  Google AI for Developers](https://ai.google.dev/gemini-api/docs/api-key)). This key will be used to allow Langbase (or your local environment) to call the Gemini LLM. Ensure you have enabled the appropriate Google AI services on your account.
 - Basic knowledge of TypeScript/JavaScript and the command line.
 
@@ -263,7 +263,7 @@ The answer may also include citations like “[1]” referencing the source docu
 
 ## Acknowledgments
 
-This project was inspired by the freeCodeCamp article _“How to Build RAG AI Agents with TypeScript”_. Special thanks to freeCodeCamp for the comprehensive tutorial that formed the foundation of this implementatio ([How to Build RAG AI Agents with TypeScript | daily.dev](https://app.daily.dev/posts/how-to-build-rag-ai-agents-with-typescript-9nj7z83ug#:~:text=Learn%20how%20to%20build%20a,you%27ll%20have%20a%20Show%20more))】. The adaptation to Google’s Gemini API was made to explore using the latest Google LLM for the agentic RAG pipeline.
+This project was inspired by the freeCodeCamp article _“How to Build RAG AI Agents with TypeScript”_. Special thanks to freeCodeCamp and Maham Codes for the comprehensive tutorial that formed the foundation of this implementatio. The adaptation to Google’s Gemini API was made to explore using the latest Google LLM for the agentic RAG pipeline.
 
 ## License
 
